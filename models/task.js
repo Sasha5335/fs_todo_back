@@ -14,14 +14,17 @@ module.exports = (sequelize, DataTypes) => {
           notEmpty: true,
         },
       },
-    },
-    {
+
       isDone: {
         field: 'is_done',
+        allowNull: false,
+        defaultValue: false,
         type: DataTypes.BOOLEAN,
+        validate: {
+          notNull: true,
+        },
       },
-    },
-    {
+
       deadline: {
         type: DataTypes.DATE,
         validate: {
@@ -29,6 +32,7 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
     },
+
     {
       sequelize,
       modelName: 'Task',

@@ -6,12 +6,26 @@ module.exports = (sequelize, DataTypes) => {
   }
   Task.init(
     {
-      task: {
+      body: {
         allowNull: false,
         type: DataTypes.STRING(512),
         validate: {
           notNull: true,
           notEmpty: true,
+        },
+      },
+    },
+    {
+      isDone: {
+        field: 'is_done',
+        type: DataTypes.BOOLEAN,
+      },
+    },
+    {
+      deadline: {
+        type: DataTypes.DATE,
+        validate: {
+          isDate: true,
         },
       },
     },

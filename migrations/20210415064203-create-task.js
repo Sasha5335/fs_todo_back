@@ -8,9 +8,18 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      task: {
+      body: {
         allowNull: false,
         type: Sequelize.STRING(512),
+      },
+      isDone: {
+        field: 'is_done',
+        allowNull: false,
+        defaultValue: false,
+        type: Sequelize.BOOLEAN,
+      },
+      deadline: {
+        type: Sequelize.DATE,
       },
       createdAt: {
         allowNull: false,

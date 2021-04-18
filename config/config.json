@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "5335",
-    "database": "task_todo",
+    "database": "fs_todo",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },

@@ -25,12 +25,12 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
 
-      deadline: {
-        type: DataTypes.DATE,
-        validate: {
-          isDate: true,
-        },
-      },
+      // deadline: {
+      //   type: DataTypes.DATE,
+      //   validate: {
+      //     isDate: true,
+      //   },
+      // },
     },
 
     {

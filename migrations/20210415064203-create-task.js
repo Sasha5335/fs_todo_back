@@ -18,9 +18,9 @@ module.exports = {
         defaultValue: false,
         type: Sequelize.BOOLEAN,
       },
-      deadline: {
-        type: Sequelize.DATE,
-      },
+      // deadline: {
+      //   type: Sequelize.DATE,
+      // },
       createdAt: {
         field: 'created_at',
         allowNull: false,
